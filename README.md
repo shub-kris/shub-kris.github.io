@@ -1,2 +1,2 @@
 # Personal Portfolio
-Visit https://shub-kris.io/
+Visit https://shub-kris.github.io/
