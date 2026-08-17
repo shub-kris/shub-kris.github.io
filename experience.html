@@ -57,29 +57,29 @@
 							</div>
 						</div>
 						<div class="content">
-							<p>Generative AI, LLM, RAG Systems</p>
+							<p>Production RAG Systems, LLM Infrastructure, Platform Reliability</p>
 							<ul>
-								<li><strong>System Reliability & Performance:</strong> Led major initiative to stabilize and accelerate uGPT imports, achieving 3x faster processing and 2x load capacity. Reduced retrieval latency by up to 75% (2 KBs) to 10x (10-30 KBs) through optimizations including removal of cosine similarity operations, query optimization, and caching strategies. Responded to critical incidents and eliminated recurring import failures.</li>
-								<li><strong>Code Quality & Infrastructure:</strong> Introduced comprehensive code quality initiatives including pre-commit hooks, PyTest framework, MyPy type checking, and linting/formatting checks in CI (adopted across teams). Optimized CI/CD workflows, reducing Docker image size from 4.1GB to 370MB and build times from 20-25 minutes to 3-6 minutes through migration to uv package manager and workflow consolidation.</li>
-								<li><strong>Feature Development & Model Rollouts:</strong> Fixed critical chunking bugs that increased Bot understood rate and decreased "not understood" responses. Supported custom instructions implementation and coordinated GPT-4o A/B testing with prompt migration. Led Text-Embedding-3-Large rollout resulting in higher Bot understood rate and lower escalation rate. Added batching for embedding computation achieving 2x faster imports.</li>
-								<li><strong>Monitoring & Observability:</strong> Built comprehensive monitoring infrastructure using Datadog, Sentry, and Grafana with dashboards, alerts, and Prometheus metrics for imports and latency. Refined Sentry alert rules to eliminate false positives and accelerate triage. Established monitoring as reference implementation for other teams.</li>
-								<li><strong>Infrastructure & Scalability:</strong> Drove ZOS migration (85% complete) and contributed to internal libraries (language-utils, db-utils, service-utils). Identified major scalability risks and designed mitigation strategy for adding OpenSearch cluster for new customers. Prevented excessive sharding through automated cleanup of orphaned indexes, reducing costs and improving cluster health. Removed secondary chunks and embeddings, reducing OpenSearch storage by 38% and improving import speed by 26%.</li>
-								<li><strong>Documentation & Knowledge Sharing:</strong> Authored comprehensive documentation on indexing/chunking end-to-end, staged releases, A/B testing setup, and import debugging guides. Updated AI/ML onboarding documentation. Delivered multiple knowledge transfer sessions to different teams on import processes, A/B testing and others.</li>
-								<li><strong>Collaboration & Leadership:</strong> Resolved high volume of support tickets ensuring smooth operations. Evaluated 20+ coding assignments and led/assisted in 10+ technical interviews for hiring across different internal Teams. Worked closely with cross-functional teams including research scientists, product managers, and engineers to deliver production-ready AI solutions.</li>
+								<li><strong>Performance Engineering:</strong> Reduced search retrieval latency by 75% to 10x across different workloads through query optimization, removal of redundant computations, and intelligent caching. Eliminated unnecessary storage layers, cutting index storage by 38% and improving ingestion throughput by 26%. Introduced batched embedding computation for 2x faster data processing.</li>
+								<li><strong>System Reliability & Incident Management:</strong> Led initiative to stabilize RAG import pipelines—achieving 3x throughput improvement, 2x load capacity, and eliminating recurring failures. Spearheaded end-to-end incident response for a critical search cluster outage affecting 300+ customers, managing full lifecycle from triage through service restoration. Enforced scalability safeguards to prevent future cluster degradation.</li>
+								<li><strong>LLM Evaluation & Experimentation:</strong> Led end-to-end migration of 6 LLM prompts (GPT-4o → GPT-4.1) with A/B testing infrastructure and phased rollout—no degradation in resolution or quality metrics. Built experimentation platform with automated hourly metric computation via data warehouse integration. Authored the team's experimentation playbook defining when to A/B test vs. rollout vs. direct deploy. Drove RAG assessment pipeline for systematic retrieval quality evaluation.</li>
+								<li><strong>Search Infrastructure & Platform Migration:</strong> Deployed new OpenSearch clusters across EU and US regions with conditional read/write routing to isolate customers and prevent capacity issues on legacy clusters. Led cross-stack contributions (Python + TypeScript) to accelerate platform migration—extending API contracts, implementing data mapping for knowledge sources, and ensuring backward compatibility. Enforced scalability safeguards (e.g., hard limits on knowledge bases per bot) after identifying near-miss incidents that threatened cluster stability.</li>
+								<li><strong>Observability & CI/CD:</strong> Implemented unified LLM request tracing for end-to-end visibility (one trace = one request with all downstream calls nested). Built production monitoring stack (dashboards, alerts, distributed tracing) adopted as reference by other teams. Optimized CI/CD pipelines: container images reduced from 4.1GB to 370MB, build times from 25 to 5 minutes through package manager migration and workflow consolidation.</li>
+								<li><strong>Code Quality, Documentation & Hiring:</strong> Introduced pre-commit hooks, modern testing frameworks, type checking, and automated linting in CI—adopted across the ML engineering chapter. Authored comprehensive documentation on system architecture, experimentation setup, staged releases, and troubleshooting guides (used by support teams to reduce engineering escalations). Evaluated 20+ coding assignments and led 10+ technical interviews across multiple teams.</li>
 							</ul>
 							<div class="tags">
 								<span class="tag">Python</span>
+								<span class="tag">TypeScript</span>
 								<span class="tag">LLMs</span>
 								<span class="tag">RAG</span>
 								<span class="tag">OpenSearch</span>
 								<span class="tag">MongoDB</span>
 								<span class="tag">Datadog</span>
 								<span class="tag">Sentry</span>
-								<span class="tag">Grafana</span>
 								<span class="tag">GitHub Actions</span>
 								<span class="tag">Google Cloud</span>
-								<span class="tag">PyTest</span>
 								<span class="tag">Docker</span>
+								<span class="tag">A/B Testing</span>
+								<span class="tag">PyTest</span>
 							</div>
 						</div>
 					</div>
